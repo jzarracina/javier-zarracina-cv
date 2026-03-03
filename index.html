@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <title>Javier Zarracina | CV</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@400;600;700&display=swap" rel="stylesheet">
 
     <style>
       body {
@@ -22,8 +23,75 @@
       }
 
       h1 {
-        font-weight: 600;
+        font-family: "Bitter", Georgia, serif;
+        font-weight: 700;
         margin-bottom: 8px;
+      }
+
+      h2 {
+        font-family: "Bitter", Georgia, serif;
+        font-weight: 600;
+        margin-top: 34px;
+        margin-bottom: 10px;
+        font-size: 18px;
+        letter-spacing: 0.2px;
+      }
+
+      h3 {
+        font-family: "Bitter", Georgia, serif;
+        font-weight: 600;
+        margin-top: 18px;
+        margin-bottom: 6px;
+        font-size: 16px;
+      }
+
+      p {
+        margin-top: 0;
+        margin-bottom: 12px;
+      }
+
+      ul {
+        margin-top: 8px;
+        margin-bottom: 14px;
+        padding-left: 18px;
+      }
+
+      li {
+        margin-bottom: 6px;
+      }
+
+      .role {
+        color: #111;
+        font-size: 14px;
+        margin-bottom: 10px;
+        font-weight: 700; /* bold position/title line */
+      }
+
+      .role .dates,
+      .role em {
+        font-weight: 400;
+        color: #555;
+        font-style: normal;
+      }
+
+      .cv {
+        margin-top: 40px;
+        line-height: 1.7;
+      }
+
+      .highlight-box {
+        background: #efefef;
+        border-radius: 6px;
+        padding: 18px 18px;
+        margin: 12px 0 18px 0;
+      }
+
+      .highlight-box p:last-child {
+        margin-bottom: 0;
+      }
+
+      .highlight-box ul:last-child {
+        margin-bottom: 0;
       }
 
       .links {
@@ -58,30 +126,13 @@
       .download-btn:hover {
         background: #333;
       }
-
-      .pdf-container {
-        background: white;
-        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
-      }
-
-      iframe {
-        width: 100%;
-        height: 1200px;
-        border: none;
-      }
-
-      @media (max-width: 768px) {
-        iframe {
-          height: 900px;
-        }
-      }
     </style>
   </head>
 
   <body>
     <div class="wrapper">
       <h1>Javier Zarracina</h1>
-      <p style="margin-top: 0; color: #555; font-size: 16px">
+      <p style="margin-top: 0; color: #555; font-size: 18px">
         Visual journalist • Graphics editor • Multimedia storyteller
       </p>
 
@@ -97,9 +148,162 @@
 
       <a class="download-btn" href="JZ_CV_2026.pdf" download> Download PDF </a>
 
-      <div class="pdf-container">
-        <iframe src="JZ_CV_2026.pdf"></iframe>
-      </div>
+      <section class="cv">
+        <h2>Summary</h2>
+        <div class="highlight-box">
+        <p>
+          Senior visual journalism leader with 30+ years driving high-impact
+          visual storytelling at leading U.S. and international news
+          organizations. Builder of creative teams inside large institutions;
+          strategic partner to top newsroom leadership. Deep, hands-on
+          experience integrating cartography, data visualization, interactives,
+          motion/video, and 3D across platforms—from breaking news to long-form
+          enterprise. Known for mentorship, innovation, strong editorial
+          standards, and clear visual explanation.
+        </p>
+        </div>
+
+        <h2>Professional Experience</h2>
+
+        <h3>The Washington Post</h3>
+        <p class="role">Department Head, Graphics <span class="dates">(2025–2026)</span></p>
+        <ul>
+          <!-- Paste bullet points exactly as in the PDF. -->
+          <li>
+            Led the Graphics team for daily and enterprise coverage, editing
+            data-driven graphics, interactives, and visual storytelling for
+            breaking news and investigations. Advocated for a stronger and more
+            consistent presence of visual journalism on the homepage, working
+            closely with editors across Politics, National Security, Business,
+            Sports, and Investigations to integrate graphics earlier in the
+            reporting process.
+          </li>
+        </ul>
+
+        <h3>USA TODAY</h3>
+        <p class="role">
+          Senior Graphics Director <span class="dates">(2019–2025)</span>
+          <!-- Paste role title(s) and dates exactly as in the PDF. -->
+        </p>
+        <ul>
+          <li>
+            Led the Graphics Department across the national USA Today Network,
+            partnering with national and local editors; elevated ambition and
+            impact of visual storytelling. Contributed to a ~20% increase in
+            traffic to graphics-driven stories; attended daily Page One and
+            planning meetings with editors and leadership. Brought multimedia
+            formats to scale across newsrooms ; hands-on on major newscycles,
+            including COVID-19, Jan. 6, elections, and Ukraine coverage.
+          </li>
+        </ul>
+
+        <h3>Vox.com</h3>
+        <p class="role">
+          Graphics Editor <span class="dates">(2015–2019)</span><!-- Paste role title(s) and dates exactly as in the PDF. -->
+        </p>
+        <ul>
+          <li>
+            Produced and edited digital explainers with strong information
+            hierarchy, clear annotation, and accessible data visualization in
+            collaboration with developers and editors.
+          </li>
+        </ul>
+
+        <h3>Los Angeles Times</h3>
+        <p class="role">
+          Data &amp; Graphics Editor <span class="dates">(2013–2015)</span><!-- Paste role title(s) and dates exactly as in the PDF. -->
+        </p>
+        <ul>
+          <li>
+            Expanded multimedia capacity and workflows for explanatory,
+            digital-first story packages.
+          </li>
+        </ul>
+
+        <h3>The Boston Globe</h3>
+        <p class="role">Graphics Director <span class="dates">(2007–2013)</span></p>
+        <ul>
+          <li>
+            Led visual transformation during the shift to responsive digital
+            publishing; produced high-pressure explanatory coverage, including
+            Pulitzer-winning team work.
+          </li>
+        </ul>
+
+        <h3>The San Jose Mercury News</h3>
+        <p class="role">Deputy Graphics Director <span class="dates">(2004–2006)</span></p>
+        <ul>
+          <li>
+            Led graphics through a digital transition; supported daily and
+            enterprise storytelling across print and digital.
+          </li>
+        </ul>
+
+        <h3>Earlier career</h3>
+        <p>
+          Before joining U.S. newsrooms, I spent more than a decade in Spain in
+          graphics leadership roles. Across the full arc of my career, I’ve also
+          freelanced and consulted globally, contributing to science and
+          technical explainers and helping publications strengthen graphics
+          standards and visual communication.<!-- Paste the “Earlier career” text exactly as in the PDF. -->
+        </p>
+
+        <h2>Core Skills</h2>
+        <div class="highlight-box">
+        <ul>
+          <!-- Paste the skills list exactly as in the PDF (keep the same grouping and wording). -->
+          <li>Information design and data visualization (charts, maps, diagrams and formats)</li>
+ <li>Analytical rigor and visual QA; clear sourcing and uncertainty handling</li>
+<li>Cross-functional collaboration with subject-matter experts and stakeholders</li>
+<li>Strong editorial judgment: clarity, hierarchy, and narrative structure</li>
+<li>Scalable templates/standards for consistency across reports and decks</li>
+        </ul>
+        </div>
+
+        <h2>Teaching</h2>
+        <ul>
+          <!-- Paste Teaching entries exactly as in the PDF. -->
+          <li>Universidad de Navarra, Pamplona Instructor, Visual Journalism (2003-2004)</li>
+            <li>Universidad Don Bosco Visiting Instructor, Graphic Design post-graduate program, El Salvador (June 2003)</li><li>El Correo Post-Graduate Master Instructor (associated with Basque Country University, (1998-2002)</li>
+        </ul>
+
+        <h2>Tools</h2>
+        <ul>
+          <!-- Paste Tools list exactly as in the PDF. -->
+          <li>Adobe CC (Illustrator, InDesign, Photoshop) </li>
+<li>Affinity Creative Suite, Canva</li>
+<li>Data visualization: Datawrapper, Flourish, D3, Raw charts. ai2html</li>
+<li>3D: Luxology Modo, Blender, SketchUp</li>
+<li>Mapping: QGIS, Mapbox, Map4News</li>
+<li>Analysis: R/Python (basic)</li>
+<li>Motion/Video After Effects, Premiere, Apple Motion, Final Cut X, Cavalry</li>
+        </ul>
+
+        <h2>Selected Recognition</h2>
+        <ul>
+          <li>Pulitzer Prize 2014 (core team) breaking news.Boston Marathon Bombing</li>
+          <li>National Press Foundation —Innovative Storytelling. Politcal polarization in congress</li>
+<li>Majeri Award for leadership on data visualization</li>
+ <li>Multiple SND/Malofiej honors, European Design Awards</li>
+        </ul>
+
+        <h2>Education</h2>
+        <ul>
+          <li>Bachelor’s Communication Sciences, University of the Basque Country, EHU1990</li>
+        </ul>
+
+        <h2>Languages</h2>
+        <ul>
+          <!-- Paste languages exactly as in the PDF. -->
+          <li>English (fluent)</li>
+<li>Spanish (native)</li>
+        </ul>
+
+        <h2>Selected Talks and Competitions</h2>
+        <p>
+          I’ve spoken internationally on visual journalism and information design, including the National Press Foundation “Widening the Pipeline” workshop (2025), ABRAJI (São Paulo, 2017), Aalto University’s “Visualizing Knowledge” (Helsinki, 2017), Harvard School of Public Health (2013), and the Malofiej Infographics Summit (multiple years). I’ve also presented at SND workshops in the U.S. and Scandinavia, and served as a judge for major competitions, including Head of Jury for the International News Design Competition (2025), SND Best of Digital Design, Malofiej, and the Gabo Foundation Awards 2021.
+        </p>
+      </section>
     </div>
   </body>
 </html>
