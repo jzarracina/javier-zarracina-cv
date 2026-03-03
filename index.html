@@ -18,36 +18,48 @@
       .wrapper {
         max-width: 900px;
         margin: 60px auto;
-        padding: 0 20px;
         text-align: left;
+        background: #fff;
+        box-shadow: 0 6px 28px rgba(0, 0, 0, 0.06);
+        border-radius: 10px;
+        padding: 34px 28px;
       }
 
       h1 {
         font-family: "Bitter", Georgia, serif;
         font-weight: 700;
-        margin-bottom: 8px;
+        font-size: 34px;
+        margin: 0 0 6px 0;
+        letter-spacing: -0.3px;
       }
 
       h2 {
         font-family: "Bitter", Georgia, serif;
-        font-weight: 600;
-        margin-top: 34px;
-        margin-bottom: 10px;
-        font-size: 18px;
-        letter-spacing: 0.2px;
+        font-weight: 700;
+        margin-top: 40px;
+        margin-bottom: 12px;
+        font-size: 19px;
+        letter-spacing: 0.1px;
+        border-top: 1px solid #e8e8e8;
+        padding-top: 22px;
+      }
+
+      .cv h2:first-of-type {
+        border-top: none;
+        padding-top: 0;
       }
 
       h3 {
         font-family: "Bitter", Georgia, serif;
-        font-weight: 600;
-        margin-top: 18px;
+        font-weight: 700;
+        margin-top: 20px;
         margin-bottom: 6px;
         font-size: 16px;
       }
 
       p {
         margin-top: 0;
-        margin-bottom: 12px;
+        margin-bottom: 14px;
       }
 
       ul {
@@ -80,9 +92,10 @@
       }
 
       .highlight-box {
-        background: #efefef;
-        border-radius: 6px;
-        padding: 18px 18px;
+        background: #f3f3f3;
+        border: 1px solid #e6e6e6;
+        border-radius: 10px;
+        padding: 16px 16px;
         margin: 12px 0 18px 0;
       }
 
@@ -95,15 +108,15 @@
       }
 
       .links {
-        margin-bottom: 30px;
+        margin: 10px 0 18px 0;
         font-size: 15px;
       }
 
       .links a {
         color: #0a66c2;
         text-decoration: none;
-        margin: 0 10px;
-        font-weight: 500;
+        margin: 0 10px 0 0;
+        font-weight: 600;
       }
 
       .links a:hover {
@@ -112,19 +125,66 @@
 
       .download-btn {
         display: inline-block;
-        margin: 20px 0 40px 0;
-        padding: 12px 22px;
+        margin: 10px 0 26px 0;
+        padding: 10px 16px;
         background: #111;
         color: white;
         text-decoration: none;
         font-size: 14px;
-        letter-spacing: 0.5px;
-        border-radius: 4px;
-        transition: background 0.2s ease;
+        letter-spacing: 0.3px;
+        border-radius: 999px;
+        transition: background 0.2s ease, transform 0.06s ease;
       }
 
       .download-btn:hover {
-        background: #333;
+        background: #2a2a2a;
+      }
+
+      .download-btn:active {
+        transform: translateY(1px);
+      }
+
+      .header-divider {
+        height: 1px;
+        background: #e8e8e8;
+        margin: 18px 0 18px 0;
+      }
+
+      .subtitle {
+        margin-top: 0;
+        color: #555;
+        font-size: 20px;
+      }
+
+      /* Give experience bullets a slightly tighter newsroom feel */
+      .cv ul {
+        margin-top: 8px;
+        margin-bottom: 16px;
+      }
+
+      .cv li {
+        margin-bottom: 8px;
+      }
+
+      .contact-line {
+        margin-top: 36px;
+        padding-top: 18px;
+        border-top: 1px solid #e8e8e8;
+        font-size: 15px;
+        color: #444;
+      }
+
+      .contact-line span {
+        margin-right: 18px;
+      }
+
+      .contact-line a {
+        color: #0a66c2;
+        text-decoration: none;
+      }
+
+      .contact-line a:hover {
+        text-decoration: underline;
       }
     </style>
   </head>
@@ -132,9 +192,7 @@
   <body>
     <div class="wrapper">
       <h1>Javier Zarracina</h1>
-      <p style="margin-top: 0; color: #555; font-size: 18px">
-        Visual journalist • Graphics editor • Multimedia storyteller
-      </p>
+      <p class="subtitle">Visual journalist • Graphics editor • Multimedia storyteller</p>
 
       <div class="links">
         <a
@@ -145,6 +203,7 @@
         |
         <a href="https://jzarracina.com" target="_blank">Portfolio</a>
       </div>
+      <div class="header-divider"></div>
 
       <a class="download-btn" href="JZ_CV_2026.pdf" download> Download PDF </a>
 
@@ -302,6 +361,14 @@
         <p>
           I’ve spoken internationally on visual journalism and information design, including the National Press Foundation “Widening the Pipeline” workshop (2025), ABRAJI (São Paulo, 2017), Aalto University’s “Visualizing Knowledge” (Helsinki, 2017), Harvard School of Public Health (2013), and the Malofiej Infographics Summit (multiple years). I’ve also presented at SND workshops in the U.S. and Scandinavia, and served as a judge for major competitions, including Head of Jury for the International News Design Competition (2025), SND Best of Digital Design, Malofiej, and the Gabo Foundation Awards 2021.
         </p>
+        <div class="contact-line">
+          <span><a href="mailto:jzarracina@mac.com">jzarracina@mac.com</a></span>
+          <span><a href="tel:+16178400771">(+1) 617 840 0771</a></span>
+          <span>Silver Spring, MD 20910 US</span>
+        </div>
+        <div style="margin-top:18px;">
+          <a class="download-btn" href="JZ_CV_2026.pdf" download>Download PDF</a>
+        </div>
       </section>
     </div>
   </body>
